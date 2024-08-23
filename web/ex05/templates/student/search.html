@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">범죄검색</h1>
+    <div class="row justify-content-center">
+        <div class="col-5">
+            <form name="frm">
+                <div class="input-group">
+                    <select class="form-select" name="key">
+                        <option value="범죄중분류">범죄분류</option>
+                    </select>
+                    <input class="form-control" name="word"/>
+                    <Button class="btn btn-primary">검색하기</Button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div id="div_list" ></div>
+        </div>
+    </div>
+    <div>
+            {%raw%}
+            <script id="temp_list" type="x-handlebars-template">
+                <table class="table">
+                    <tr>
+                        <th>범죄중분류</th>
+                        <th>서울</th>
+                        <th>부산</th>
+                        <th>인천</th>
+                        <th>대구</th>
+                        <th>울산</th>
+                    </tr>
+                    {{#each .}}
+                        <tr>
+                            <td>{{범죄중분류}}</td>
+                            <td>{{서울}}</td>
+                            <td>{{부산}}</td>
+                            <td>{{인천}}</td>
+                            <td>{{대구}}</td>
+                            <td>{{울산}}</td>
+                        </tr>
+                    {{/each}}
+                </table>
+            </script>
+            {%endraw%}
+    </div>
+
+
+    
+    
+    
+    <script>
+        getData();
+
+        $(frm).on("submit", function(e){
+            e.preventDefault();
+           getData(); 
+        });
+
+        function getData(){
+            $.ajax({
+                type:'get',
+                url:'/student/search/data',
+                data:{"key":$(frm.key).val(), "word":$(frm.word).val()},
+                success:function(data){
+                    console.log(JSON.parse(data))
+                    const temp = Handlebars.compile($("#temp_list").html());
+                    $("#div_list").html(temp(JSON.parse(data)));
+                }
+            })
+        }
+    </script>
+</body>
+</html>

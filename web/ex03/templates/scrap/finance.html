@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">시총상위</h1>
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div id="div_list" ></div>
+        </div>
+    </div>
+    <div>
+        {%raw%}
+        <script id="temp_list" type="x-handlebars-template">
+            <table class="table">
+                <tr>
+                    <th>순위</th>
+                    <th>종목명</th>
+                    <th>현재가</th>
+                    <th>전일비</th>
+                    <th>등락률</th>
+                    <th>액면가</th>
+                    <th>시가총액</th>
+                    <th>상장주식수</th>
+                    <th>외국인비율</th>
+                    <th>거래량</th>
+                    <th>PER</th>
+                    <th>ROE</th>
+                </tr>
+                {{#each .}}
+                    <tr>
+                        <td>{{N}}</td>
+                        <td>{{종목명}}</td>
+                        <td>{{현재가}}</td>
+                        <td>{{전일비}}</td>
+                        <td>{{등락률}}</td>
+                        <td>{{액면가}}</td>
+                        <td>{{시가총액}}</td>
+                        <td>{{상장주식수}}</td>
+                        <td>{{외국인비율}}</td>
+                        <td>{{거래량}}</td>
+                        <td>{{PER}}</td>
+                        <td>{{ROE}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </script>
+        {%endraw%}
+    </div>
+
+    <script>
+        $.ajax({
+            type:"get",
+            url:"/scrap/finance.json",
+            success:function(data){
+                console.log(data);
+                const temp = Handlebars.compile($("#temp_list").html());
+                $("#div_list").html(temp(JSON.parse(data)));
+            }
+        })
+    </script>
+</body>
+</html>

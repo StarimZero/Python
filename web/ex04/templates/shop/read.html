@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">상품정보</h1>
+    <div class="row justify-content-center">
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div id="div_shop" ></div>
+        </div>
+    </div>
+
+    {%raw%}
+    <script id="temp_list" type="x-handlebars-template">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="ellipsis1 text-center">[{{title}}]{{title}}</h1>
+                </div>
+                <div class="card-body">
+                    <img src="{{image}}" width="100%">
+                </div>
+                <div class="card-footer">
+                    <a href="{{link}}" class="btn btn-danger" style="width:100%">구매신청</a>
+                    <div>지역 : {{address}}</div>
+                    <div>가격: {{price}}</div>
+                    <div>등록일 : {{date}}</div>
+                </div>
+            </div>
+        </div>
+    </script>
+    {%endraw%}
+
+    <script type="module"> 
+        import {app} from '/static/firebase.js'
+        import { getFirestore, collection, addDoc, deleteDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+        import { onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+        const db = getFirestore(app);
+        const id = window.location.pathname.split('/')[window.location.pathname.split('/').indexOf('read') + 1];
+        //const id ={{id}}
+        console.log(id)
+        
+        const shop = await getDoc(doc(db, 'shop', id))
+        console.log(shop.data())
+        const temp = Handlebars.compile($("#temp_list").html());
+        $("#div_shop").html(temp(shop.data()));
+    </script>
+</body>
+</html>

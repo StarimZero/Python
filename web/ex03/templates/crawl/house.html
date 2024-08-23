@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">부동산찾기</h1>
+    <div class="row justify-content-center">
+        <form class="col-6" name='frm'>
+            <div class="input-group">
+                <input class="form-control" name="query" placeholder="이름">
+                <button class="btn btn-primary">검색</button>
+            </div>
+        </form>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div id="div_list" ></div>
+        </div>
+    </div>
+    <div>
+        {%raw%}
+        <script id="temp_list" type="x-handlebars-template">
+            <table class="table">
+                <tr>
+                    <th>아파트이름</th>
+                    <th>주소</th>
+                    <th>정보</th>
+                </tr>
+                {{#each .}}
+                    <tr>
+                        <td>{{title}}</td>
+                        <td>{{address}}</td>
+                        <td>{{info}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </script>
+        {%endraw%}
+    </div>
+
+    <script>
+        let query=''
+
+        $(frm).on("submit", function(e){
+            e.preventDefault();
+            query=$(frm.query).val();
+            if(query==""){
+                alert("검색어");
+                return;
+            }
+            getList();
+        });
+
+        function getList(){
+            $("#loading").show();
+            $.ajax({
+                type:'get',
+                url:'/crawl/house.json',
+                data:{query},
+                success:function(data){
+                    $("#loading").hide();
+                    console.log(data)
+                    const temp = Handlebars.compile($("#temp_list").html());
+                    $("#div_list").html(temp(data));
+                }
+            })
+        }
+    </script>
+</body>
+</html>

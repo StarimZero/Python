@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">{{title}} 성적예측 시스템</h1>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <form id="frm">
+                <div class="input-group">
+                    <div class="input-group-text">공부시간</div>
+                    <input class="form-control" name="hour" type="number" id="hourInput"  min="0" max="10" step="0.1" placeholder="공부시간"  title="0부터 10까지 소수점 한 자리까지 입력해주세요.">
+                    <button class="btn btn-primary">예측하기</button>
+                </div>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mt-5">
+                <h1>예측결과 : <span id="result"></span>점</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#frm').on('submit', function(e) {
+                e.preventDefault();
+                const hours = $('#hourInput').val();
+                $.ajax({
+                    type: 'GET',
+                    url: '/linear/result1',
+                    data: { hours: hours },
+                    success: function(data) {
+                        console.log(data)
+                        $('#result').html(data);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

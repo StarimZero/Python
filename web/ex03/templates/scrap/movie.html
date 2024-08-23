@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">현재무비차트</h1>
+    <div id="div_list" class="row"></div>
+
+    {%raw%}
+    <script id="temp_list" type="x-handlebars-template">
+        {{#each .}}
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="ellipsis1 text-center">[{{rank}}]{{title}}</h1>
+                    </div>
+                    <div class="card-body">
+                        <img src="{{image}}" width="100%">
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{link}}" class="btn btn-danger" style="width:100%">예매하기</a>
+                        <div>개봉일 : {{date}}</div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+    {%endraw%}
+
+
+
+    <script>
+        $("#loading").show();
+        $.ajax({
+            type:"get",
+            url:"/scrap/movie.json",
+            success:function(data){
+                console.log(data);
+                const temp = Handlebars.compile($("#temp_list").html());
+                $("#div_list").html(temp(data));
+                setTimeout(()=>{
+                    $("#loading").hide();
+                }, 10000)
+                
+            }
+        })
+    </script>
+</body>
+
+</html>

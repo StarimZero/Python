@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row text-center m-5">
+        <div class="col-3">
+            <img src="../static/images/logo.jpg" width="100%" >
+            <h1 class="text-center my-5">{{title}}</h1>
+        </div>
+        <div class="col-3">
+            현재기온 : <sapn id="temp"></sapn>
+        </div>
+        <div class="col-3">
+            <h1>오늘의 세계뉴스</h1>
+            <div id="div_news"></div>
+        </div>
+        <div class="col-3">
+            <h1>오늘의 영어한마디</h1>
+            <div id="div_english"></div>
+        </div>
+    </div>
+    {%raw%}
+        <script id="temp_news" type="x-handlebars-template">
+            {{#each .}}
+                <div>{{title}}</div>
+                <div><a href="{{link}}">{{link}}</a></div>
+            {{/each}}
+        </script>
+    {%endraw%}
+
+    {%raw%}
+        <script id="temp_english" type="x-handlebars-template">
+            {{#each korean}}
+                <div>{{sentence}}</div>
+            {{/each}}
+            <hr>
+            {{#each english}}
+                <div>{{sentence}}</div>
+            {{/each}}
+        </script>
+    {%endraw%}
+
+    <script>
+        getNews();
+
+        function getWeather(){
+            $.ajax({
+                type:'get',
+                url:'/crawl/weather',
+                success:function(data){
+                    $("#temp").html(data)
+                }
+            })
+        }
+        
+        setInterval(()=>{
+            getNews()
+        }, 10000);
+
+        function getNews(){
+            $.ajax({
+                type:'get',
+                url:'/crawl/news',
+                success:function(data){
+                    const temp = Handlebars.compile($("#temp_news").html());
+                    $("#div_news").html(temp(JSON.parse(data)));
+                }
+            })
+        }
+        
+        $.ajax({
+            type:'get',
+            url:'/crawl/english',
+            success:function(data){
+                console.log(data)
+                const temp = Handlebars.compile($("#temp_english").html());
+                $("#div_english").html(temp(JSON.parse(data)));
+            }
+        })
+        
+    </script>
+
+</body>
+
+</html>

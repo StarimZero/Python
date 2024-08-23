@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+
+            <h3>댓글</h3>
+            <div class="text-end">
+                <textarea class="form-control" rows="5" placeholder="댓글내용을 입력하세요" id="contents"></textarea>
+                <button class="btn btn-outline-primary my-3" id="insert">등록</button>
+            </div>
+            <div id="div_list"></div>
+            <div id="pagination" class="pagination justify-content-center mt-5"></div>
+        </div>
+    </div>
+
+
+    
+    {%raw%}
+    <script id="temp_list" type="x-handlebars-template">
+        {{#each list}}
+            <div class="row display{{reply_id}}">
+                <div class = "col-2 text-muted">
+                    [{{reply_id}}]작성자 : {{reply_writer}} 
+                </div>
+                <div class="col-8 text-muted text-end">
+                    작성일 : {{fmtdate}}
+                </div>
+                <div class="col-2 text-end"  style="{{style reply_writer}}" rid="{{reply_id}}">
+                    <button class="btn btn-outline-warning btn-sm update" >수정</button>
+                    <button class="btn btn-outline-danger btn-sm delete">삭제</button>
+                </div>
+                <div class="ellipsis2 content" style=" cursor: pointer;">
+                    {{reply_contents}}
+                </div>
+                <hr>
+                <hr>
+            </div>
+                <div class="row edit{{reply_id}}" style="display:none">
+                    <div class = "col-2 text-muted">
+                        작성자 : {{reply_writer}} 
+                    </div>
+                    <div class="col-8 text-muted text-end">
+                        작성일 : {{fmtdate}}
+                    </div>
+                    <div class="col-2 text-end"  style="{{style reply_writer}}" rid="{{reply_id}}">
+                        <button class="btn btn-outline-warning btn-sm save">저장</button>
+                        <button class="btn btn-outline-danger btn-sm cancel">취소</button>
+                    </div>
+                    <textarea class="form-control contents" rows="5">{{reply_contents}}</textarea>
+                    <hr>
+                    <hr>
+                </div>
+        {{/each}}
+
+    </script>
+    
+    <script>
+        Handlebars.registerHelper("style", function(writer){
+            if(uid!==writer) return "display:none";
+        });
+    </script>
+    {%endraw%}
+
+    <script>
+        let page =1;
+        let totalPages=100;
+        let size =3;
+        let total = 0;
+
+
+        //수정버튼클릭
+        $("#div_list").on("click", ".update", function(){
+            const rid = $(this).parent().attr("rid");
+            $("#div_list .edit" + rid).show();
+            $("#div_list .display" + rid).hide();
+        })
+
+        //취소버튼
+        $("#div_list").on("click", ".cancel", function(){
+            const rid = $(this).parent().attr("rid");
+            $("#div_list .edit" + rid).hide();
+            $("#div_list .display" + rid).show();
+        })
+        //저장버튼
+        $("#div_list").on("click", ".save", function(){
+            const rid = $(this).parent().attr("rid");
+            const contents = $(this).parent().parent().parent().find(".contents").val();
+            if(!confirm(`${rid}번 댓글 수정?`)) return;
+            //댓글수정
+            $.ajax({
+                type:"put",
+                url:"/reply",
+                data:JSON.stringify({rid, contents}),
+                success:function(data){
+                    if(data=='success'){
+                        getList();
+                    }
+                }
+            })
+        })
+
+        //삭제버튼클
+        $("#div_list").on("click", ".delete", function(){
+            const rid = $(this).parent().attr("rid");
+            if(!confirm("삭제?"))return;
+            //삭제하기
+            $.ajax({
+                type:"delete",
+                url:`/reply/${rid}`,
+                success:function(data){
+                    if(data=='success'){
+                        const last = Math.ceil((total-1)/size)
+                        if(totalPages > last && last >0)  page--;
+                        console.log(totalPages, last, page, total)
+                        
+                    }
+                    getList();
+                }
+            })
+        })
+
+        getList();
+        function getList(){
+            $.ajax({
+
+                type:"get",
+                url:`/reply/${bid}`,
+                data : {page, size},
+                success:function(data){
+                    //console.log(data);
+                    const temp=Handlebars.compile($("#temp_list").html());
+                    $("#div_list").html(temp(data));
+
+                    if(data.total > size){
+                        $("#pagination").show();
+                    }else{
+                        $("#pagination").hide();
+                    }
+                    const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
+                    if(curPages != totalPages){
+                        totalPages = curPages
+                        $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
+                        
+                    }
+                }
+            })
+        }
+
+        $("#insert").on("click", ()=>{
+            if(uid){
+                const contents =$("#contents").val();
+                if(contents==""){
+                    alert("댓글내용을 입력하세요.");
+                    $("#contents").focus();
+                    retrn;
+                }
+                //댓글등록
+                if(!confirm("등록?")) return;
+                $.ajax({
+                    type:"post",
+                    url:"/reply",
+                    data:JSON.stringify({bid, contents, uid}),
+                    success:(data)=>{
+                        if(data=='success') {
+                            getList();
+                            $("#contents").val("");
+                            alert("등록완료")
+                        }
+                    }
+                })
+
+            }else{
+                alert("로그인이 필요합니다. 로그인창으로이동합니다.")
+                sessionStorage.setItem("target", `/bbs/${bid}`);
+                location.href="/users/login"
+            }
+        })
+
+        $("#div_list").on("click", ".content", function(){
+		    $(this).toggleClass("ellipsis2");
+	    });
+
+        $('#pagination').twbsPagination({
+            totalPages:totalPages,
+            visiblePages: 5,
+            startPage : 1,
+            initiateStartPageClick: false,
+            first:'처음',
+            prev :'이전',
+            next :'다음',
+            last :'끄읕',
+            onPageClick: function (event, clickedPage) {
+                if(page != clickedPage) {
+                    page=clickedPage;
+                    getList();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

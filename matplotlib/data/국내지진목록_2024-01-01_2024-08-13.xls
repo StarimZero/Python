@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>국내지진조회</title>
+	<body>
+		<table class="table-col eqk-search-table" id="excel_body"> 
+			<caption>국내 지진 검색 결과를 번호, 발생시각, 규모, 깊이, 위도, 경도, 위치, 지도보기로 제공하는 표</caption>
+			<colgroup> 
+				<col style="width:6%" /> 
+				<col style="width:15%" /> 
+				<col style="width:7%" /> 
+				<col style="width:7%" /> 
+				<col style="width:7%" />  
+				<col style="width:9%" /> 
+				<col style="width:9%" /> 
+				<col /> 
+				<col style="width:8%" /> 
+				<col style="width:10%" /> 
+			</colgroup> 
+			<thead> 
+				<tr>
+					<th scope="col">번호</th>
+					<th scope="col">발생시각</th>
+					<th scope="col">규모</th>
+					<th scope="col">깊이(km)</th>
+					<th scope="col">최대<br />진도</th>
+					<th scope="col">위도</th>
+					<th scope="col">경도</th>
+					<th scope="col">위치</th>
+					<th scope="col">지도보기</th>
+					<th scope="col">상세정보<br/>(진도 등)</th> 
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span>43</span></td>
+					<td><span>2024/08/04 00:27:10</span></td>
+					<td><span>2.7</span></td>
+					<td><span>18</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>34.79 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>124.66 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전남 신안군 흑산도 서쪽 71km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240804002710.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240804002710.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>42</span></td>
+					<td><span>2024/08/01 12:50:08</span></td>
+					<td><span>2.6</span></td>
+					<td><span>9</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.77 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.89 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 황해북도 송림 동쪽 22km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240801125008.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240801125008.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>41</span></td>
+					<td><span>2024/08/01 08:34:12</span></td>
+					<td><span>3.0</span></td>
+					<td><span>9</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.76 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.89 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 황해북도 송림 동쪽 22km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240801083412.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240801083412.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>40</span></td>
+					<td><span>2024/07/29 21:56:42</span></td>
+					<td><span>2.3</span></td>
+					<td><span>14</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.78 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.89 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 황해북도 송림 동북동쪽 23km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240729215642.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240729215642.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>39</span></td>
+					<td><span>2024/07/27 12:50:57</span></td>
+					<td><span>2.9</span></td>
+					<td><span>17</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.30 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.13 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 42km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240727125057.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240727125057.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>38</span></td>
+					<td><span>2024/07/26 22:52:37</span></td>
+					<td><span>2.6</span></td>
+					<td><span>-</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>35.56 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.14 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전북 군산시 어청도 남서쪽 98km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240726225237.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240726225237.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>37</span></td>
+					<td><span>2024/07/06 02:19:15</span></td>
+					<td><span>2.4</span></td>
+					<td><span>16</span></td>
+					<td><span>Ⅲ</span></td>
+					<td>
+						
+							<span>36.51 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>128.85 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경북 안동시 동남동쪽 13km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240706021915.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240706021915.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>36</span></td>
+					<td><span>2024/07/03 14:24:43</span></td>
+					<td><span>2.3</span></td>
+					<td><span>8</span></td>
+					<td><span>Ⅱ</span></td>
+					<td>
+						
+							<span>35.70 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>126.72 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전북 부안군 남남서쪽 4km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240703142443.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240703142443.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>35</span></td>
+					<td><span>2024/06/27 03:04:40</span></td>
+					<td><span>2.1</span></td>
+					<td><span>6</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>39.56 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>127.04 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경남도 금야 서쪽 17km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240627030440.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240627030440.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>34</span></td>
+					<td><span>2024/06/22 13:49:00</span></td>
+					<td><span>2.0</span></td>
+					<td><span>16</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>32.97 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>126.28 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>제주 서귀포시 남서쪽 41km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240622134900.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240622134900.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>33</span></td>
+					<td><span>2024/06/12 13:55:42</span></td>
+					<td><span>3.1</span></td>
+					<td><span>8</span></td>
+					<td><span>Ⅳ</span></td>
+					<td>
+						
+							<span>35.70 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>126.73 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전북 부안군 남쪽 4km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240612135542.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240612135542.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>32</span></td>
+					<td><span>2024/06/12 08:26:49</span></td>
+					<td><span>4.8</span></td>
+					<td><span>8</span></td>
+					<td><span>Ⅴ</span></td>
+					<td>
+						
+							<span>35.70 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>126.72 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전북 부안군 남남서쪽 4km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240612082649.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							
+							
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/report_20240612082649.pdf" target="_blank" title="새창열림"><i>지진분석서</i></a>
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>31</span></td>
+					<td><span>2024/06/09 15:16:14</span></td>
+					<td><span>2.1</span></td>
+					<td><span>7</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>33.40 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.10 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>제주 제주시 서쪽 133km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240609151614.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240609151614.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>30</span></td>
+					<td><span>2024/06/08 23:04:37</span></td>
+					<td><span>2.2</span></td>
+					<td><span>15</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.87 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.18 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 강원 회양 동쪽 138km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240608230437.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240608230437.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>29</span></td>
+					<td><span>2024/06/03 02:25:11</span></td>
+					<td><span>2.5</span></td>
+					<td><span>14</span></td>
+					<td><span>Ⅲ</span></td>
+					<td>
+						
+							<span>38.24 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>128.69 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>강원 속초시 동북동쪽 9km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240603022511.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240603022511.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>28</span></td>
+					<td><span>2024/06/01 11:55:28</span></td>
+					<td><span>2.1</span></td>
+					<td><span>6</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.33 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.17 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 44km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240601115528.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240601115528.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>27</span></td>
+					<td><span>2024/06/01 00:53:41</span></td>
+					<td><span>2.4</span></td>
+					<td><span>11</span></td>
+					<td><span>Ⅱ</span></td>
+					<td>
+						
+							<span>36.24 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>128.20 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경북 김천시 북동쪽 14km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240601005341.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240601005341.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>26</span></td>
+					<td><span>2024/05/31 03:35:02</span></td>
+					<td><span>2.8</span></td>
+					<td><span>9</span></td>
+					<td><span>Ⅲ</span></td>
+					<td>
+						
+							<span>38.13 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>127.09 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경기 연천군 북북동쪽 4km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240531033502.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240531033502.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>25</span></td>
+					<td><span>2024/05/22 12:29:19</span></td>
+					<td><span>2.3</span></td>
+					<td><span>16</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.27 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.06 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 42km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240522122919.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240522122919.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>24</span></td>
+					<td><span>2024/05/20 10:31:45</span></td>
+					<td><span>2.6</span></td>
+					<td><span>22</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>35.63 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.83 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>울산 동구 동북동쪽 40km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240520103145.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240520103145.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>23</span></td>
+					<td><span>2024/05/09 05:41:25</span></td>
+					<td><span>2.2</span></td>
+					<td><span>11</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.32 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.18 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 42km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240509054125.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240509054125.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>22</span></td>
+					<td><span>2024/05/08 00:50:00</span></td>
+					<td><span>2.2</span></td>
+					<td><span>11</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.80 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>126.17 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 황해북도 연산 남서쪽 11km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240508005000.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240508005000.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>21</span></td>
+					<td><span>2024/04/30 01:54:46</span></td>
+					<td><span>2.5</span></td>
+					<td><span>16</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.30 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.14 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 41km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240430015446.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240430015446.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>20</span></td>
+					<td><span>2024/04/28 10:33:43</span></td>
+					<td><span>2.2</span></td>
+					<td><span>14</span></td>
+					<td><span>Ⅲ</span></td>
+					<td>
+						
+							<span>35.61 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>128.28 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경남 합천군 동북동쪽 11km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240428103343.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240428103343.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>19</span></td>
+					<td><span>2024/04/22 18:47:51</span></td>
+					<td><span>2.0</span></td>
+					<td><span>20</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>33.31 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>127.10 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>제주 서귀포시 동쪽 51km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240422184751.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240422184751.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>18</span></td>
+					<td><span>2024/04/22 07:47:19</span></td>
+					<td><span>2.6</span></td>
+					<td><span>6</span></td>
+					<td><span>Ⅳ</span></td>
+					<td>
+						
+							<span>36.00 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>128.35 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경북 칠곡군 서쪽 5km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240422074719.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240422074719.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>17</span></td>
+					<td><span>2024/04/10 15:30:46</span></td>
+					<td><span>2.9</span></td>
+					<td><span>6</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>39.44 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.88 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 평안남도 평성 북쪽 22km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240410153046.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240410153046.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>16</span></td>
+					<td><span>2024/03/27 11:14:27</span></td>
+					<td><span>2.7</span></td>
+					<td><span>16</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.31 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.12 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 43km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240327111427.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240327111427.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>15</span></td>
+					<td><span>2024/03/27 09:45:06</span></td>
+					<td><span>2.5</span></td>
+					<td><span>19</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.30 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.09 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 43km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240327094506.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+						-
+					</td>
+				</tr>
+				<tr>
+					<td><span>14</span></td>
+					<td><span>2024/03/27 09:43:10</span></td>
+					<td><span>2.9</span></td>
+					<td><span>29</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.31 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.13 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 43km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240327094310.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240327094310.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>13</span></td>
+					<td><span>2024/03/25 21:16:45</span></td>
+					<td><span>2.1</span></td>
+					<td><span>7</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>35.11 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.07 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전남 신안군 흑산도 북북서쪽 58km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240325211645.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240325211645.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>12</span></td>
+					<td><span>2024/03/22 08:05:55</span></td>
+					<td><span>2.4</span></td>
+					<td><span>18</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>33.68 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.15 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전남 신안군 흑산도 남남서쪽 113km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240322080555.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240322080555.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>11</span></td>
+					<td><span>2024/03/15 22:35:42</span></td>
+					<td><span>2.2</span></td>
+					<td><span>15</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.30 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.19 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 40km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240315223542.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240315223542.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>10</span></td>
+					<td><span>2024/03/03 08:53:39</span></td>
+					<td><span>2.8</span></td>
+					<td><span>14</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>35.09 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.09 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전남 신안군 흑산도 북북서쪽 56km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240303085339.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240303085339.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>9</span></td>
+					<td><span>2024/02/14 23:33:00</span></td>
+					<td><span>2.2</span></td>
+					<td><span>20</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.28 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.15 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 39km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240214233300.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240214233300.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>8</span></td>
+					<td><span>2024/02/08 03:15:44</span></td>
+					<td><span>2.3</span></td>
+					<td><span>21</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.46 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.25 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북쪽 57km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240208031544.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240208031544.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>7</span></td>
+					<td><span>2024/02/03 02:24:04</span></td>
+					<td><span>2.0</span></td>
+					<td><span>13</span></td>
+					<td><span>Ⅱ</span></td>
+					<td>
+						
+							<span>35.96 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>127.00 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전북 익산시 동북동쪽 4km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240203022404.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240203022404.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>6</span></td>
+					<td><span>2024/01/31 17:36:23</span></td>
+					<td><span>3.8</span></td>
+					<td><span>13</span></td>
+					<td><span>Ⅱ</span></td>
+					<td>
+						
+							<span>32.52 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.65 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>제주 서귀포시 이어도 북동쪽 62km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240131173623.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240131173623.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>5</span></td>
+					<td><span>2024/01/24 19:12:07</span></td>
+					<td><span>2.0</span></td>
+					<td><span>18</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>35.76 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.19 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>경북 경주시 남남서쪽 11km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240124191207.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240124191207.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>4</span></td>
+					<td><span>2024/01/24 12:25:25</span></td>
+					<td><span>2.1</span></td>
+					<td><span>-</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>38.85 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>125.76 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 황해북도 송림 북동쪽 17km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240124122525.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240124122525.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>3</span></td>
+					<td><span>2024/01/13 08:03:02</span></td>
+					<td><span>2.4</span></td>
+					<td><span>8</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>37.65 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>124.65 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>인천 옹진군 백령도 남쪽 34km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240113080302.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240113080302.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>2</span></td>
+					<td><span>2024/01/11 19:00:53</span></td>
+					<td><span>2.4</span></td>
+					<td><span>20</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>41.30 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>129.16 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>북한 함경북도 길주 북북서쪽 41km 지역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240111190053.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240111190053.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td><span>1</span></td>
+					<td><span>2024/01/06 20:02:39</span></td>
+					<td><span>2.4</span></td>
+					<td><span>17</span></td>
+					<td><span>Ⅰ</span></td>
+					<td>
+						
+							<span>33.59 N</span>
+							
+							
+						
+						
+					</td>
+					<td>
+						
+							<span>127.22 E</span>
+							
+							
+						
+						
+					</td>
+					<td><span>전남 여수시 거문도 남쪽 49km 해역</span></td>
+					<td>
+						<a href="https://www.weather.go.kr/w/XML/eqk/img/eqk_img_3_20240106200239.png" target="_blank" title="새창열림">지도</a>
+						
+					</td>
+					<td>
+						
+							<a href="https://www.weather.go.kr/w/XML/INTENSITY/i_3_20240106200239.html" target="_blank" title="새창열림"><span>상세정보</span></a>
+							
+							
+						
+						
+					</td>
+				</tr>
+			</tbody> 
+		</table>
+	 </body>
+</html>

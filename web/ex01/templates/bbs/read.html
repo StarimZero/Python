@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const writer="{{bbs.bbs_writer}}";
+    const bid="{{bbs.bbs_id}}";
+</script>
+<body>
+    <div class="row justify-content-center">
+        <div class="col-5 my-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5>[{{bbs.bbs_id}}] {{bbs.bbs_title}}</h5>
+                    <hr>
+                    <div style="white-space: pre-wrap;">{{bbs.bbs_contents}} </div>
+                    <div class="card-footer text-end">
+                        Posted by <b>{{bbs.bbs_writer}}</b> on {{bbs.fmtdate}}
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mb-3" id="update">
+                <button class="btn btn-outline-warning m-3 update" >수정</button>
+                <button class="btn btn-outline-danger delete">삭제</button>
+            </div>
+            <div>
+                {% include 'bbs/reply.html '%}
+            </div>
+        </div>
+    </div>
+    <script>
+
+        if(writer==uid){
+            $("#update").show();
+        }else{
+            $("#update").hide();
+        }
+
+        $(".delete").on("click", function(){
+            if(!confirm(`${bid}번 게시글을 삭제하시겠습니까?`)) return;
+            //삭제
+            $.ajax({
+                type:"delete",
+                url:`/bbs/${bid}`,
+                success:function(data){
+                    if(data=='success'){
+                        alert("삭제완료")
+                        location.href="/bbs";
+                    }
+                }
+            })
+        })
+        
+        $(".update").on("click", ()=>{
+            location.href=`/bbs/update/${bid}`
+        })
+    </script>
+</body>
+</html>

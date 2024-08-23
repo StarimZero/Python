@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row justify-content-center">
+        <div class="col-10 text-center my-5">
+            <h1>{{title}}</h1>
+            <div>
+                <form name="frm">
+                <input class="form-control mb-2" name="title" placeholder="제목을입력하세요">
+                <textarea class="form-control" rows="20" name="contents" placeholder="내용을 입력하세요"></textarea>
+                <div class="text-end">
+                    <button class="btn btn-primary m-3">글쓰기</button>
+                    <button type="reset" class="btn btn-danger my-3">취소</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(frm).on("submit", function(e){
+            e.preventDefault();
+            const title=$(frm.title).val();
+            const contents=$(frm.contents).val();
+            if(title==""){
+                alert("제목을 입력하세요");
+                $(frm.title).focus();
+                return;
+            }
+            //게시글증록
+            console.log(uid, title, contents);
+            $.ajax({
+                type:"post",
+                url : "/bbs/insert",
+                data:JSON.stringify({uid, title, contents}),
+                success:function(data){
+                    if(data=="success"){
+                        location.href="/bbs"
+                        alert("글쓰기등록완료")
+                    }else{
+                        alert("글등록에 실패하였습니다.");
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center my-5">{{title}}</h1>
+    <div class="row justify-content-center">
+        <div class="col-7" id="insert">
+            <a href="/bbs/insert"  ><button class="btn btn-outline-warning">글쓰기</button></a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div id="div_list" ></div>
+            <div id="pagination" class="pagination justify-content-center mt-5"></div>
+        </div>
+    </div>
+
+    {%raw%}
+    <script id="temp_list" type="x-handlebars-template">
+        <table class="table">
+            {{#each list}}
+                <tr>
+                    <td>{{bbs_id}}</td>
+                    <td><a href="/bbs/{{bbs_id}}" style="color: black; text-decoration: none;">{{bbs_title}}</a></td>
+                    <td>{{bbs_writer}}</td>
+                    <td>{{fmtdate}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    </script>
+    {%endraw%}
+
+    <script>
+        let page = 1;
+        let size = 13;
+        let totalPages = 550;
+
+        getList();
+        function getList(){
+            $.ajax({
+                type:"get", 
+                url:"/bbs/list.json",
+                data:{page,size},
+                success:function(data){
+                    const temp=Handlebars.compile($("#temp_list").html());
+                    $("#div_list").html(temp(data));
+                    
+                    const curPages = data.total == 0 ? 1:Math.ceil(data.total/size);
+                    if(curPages != totalPages){
+                        totalPages = curPages
+                        $("#pagination").twbsPagination("changeTotalPages", totalPages, page);
+                    }
+                }
+            })
+        }
+        if(uid){
+            $("#insert").show();
+        }else{
+            $("#insert").hide();
+        }
+
+        $('#pagination').twbsPagination({
+            totalPages:totalPages,
+            visiblePages: 5,
+            startPage : 1,
+            initiateStartPageClick: false,
+            first:'처음',
+            prev :'이전',
+            next :'다음',
+            last :'끄읕',
+            onPageClick: function (event, clickedPage) {
+                if(page != clickedPage) {
+                page=clickedPage;
+                getList();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
